@@ -5,15 +5,18 @@
   
 
   
-  <title>你好，hexo | Study</title>
+  <title>Study</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="你好，hexo">
-<meta property="og:url" content="http://yoursite.com/2018/03/26/你好，hexo/index.html">
+  <meta name="description" content="这一次介绍下鼠标点击和鼠标移出事件，实现效果弹出页面框。 使用====onmousedown==,==onmouseup==,==alert== ######  代码如下： &amp;lt;div id=&amp;quot;move&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;   &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;   var m = document.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Study">
+<meta property="og:url" content="http://yoursite.com/2018/03/26/first/index.html">
 <meta property="og:site_name" content="Study">
-<meta property="og:updated_time" content="2018-03-26T12:13:09.700Z">
+<meta property="og:description" content="这一次介绍下鼠标点击和鼠标移出事件，实现效果弹出页面框。 使用====onmousedown==,==onmouseup==,==alert== ######  代码如下： &amp;lt;div id=&amp;quot;move&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;   &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;   var m = document.">
+<meta property="og:updated_time" content="2018-03-26T13:52:17.223Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="你好，hexo">
+<meta name="twitter:title" content="Study">
+<meta name="twitter:description" content="这一次介绍下鼠标点击和鼠标移出事件，实现效果弹出页面框。 使用====onmousedown==,==onmouseup==,==alert== ######  代码如下： &amp;lt;div id=&amp;quot;move&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;   &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;   var m = document.">
   
     <link rel="alternate" href="/atom.xml" title="Study" type="application/atom+xml">
   
@@ -51,7 +54,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,33 +63,58 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-你好，hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/03/26/你好，hexo/" class="article-date">
-  <time datetime="2018-03-26T12:13:09.000Z" itemprop="datePublished">2018-03-26</time>
+    <a href="/2018/03/26/first/" class="article-date">
+  <time datetime="2018-03-26T13:56:34.048Z" itemprop="datePublished">2018-03-26</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      你好，hexo
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>这一次介绍下鼠标点击和鼠标移出事件，实现效果弹出页面框。</p>
+<p>使用====onmousedown==,==onmouseup==,==alert==</p>
+<p>###### </p>
+<p>代码如下：</p>
+<pre><code>&lt;div id=&quot;move&quot;&gt;&lt;/div&gt;  
+&lt;script type=&quot;text/javascript&quot;&gt;  
+var m = document.getElementById(&apos;move&apos;);  
+var m = document.getElementById(&apos;move&apos;);
+//鼠标按下
+m.onmousedown = function(){//down向下
+alert(&apos;鼠标点击&apos;);
+}
+//鼠标抬起
+m.onmouseup = function(){//up向上
+alert(&apos;鼠标离开&apos;);
+ }
+ //尺寸
+var l = m.offsetLeft;//获取当前元素相对于父级元素x轴的偏移量
+var t = m.offsetTop;//获取当前元素相对于父级元素y轴的偏移量
+var w = m.offsetWidth;//快速获取元素的宽度
+var h = m.offsetHeight;//获取元素的高度
+</code></pre><h6 id=""><a href="#" class="headerlink" title=" "></a> </h6><hr>
+<h5 id="-1"><a href="#-1" class="headerlink" title=" "></a> </h5><p>以及css设置：</p>
+<pre><code> *{margin:0px;padding:0px;}  
+#move{
+width:300px;
+height:300px;
+background:pink;
+font-family:microsofyahei;
+position:absolute;
+top:200px;
+left:400px;}
+</code></pre><hr>
+<p>通过这个事件，可以将alert修改为其他效果，并且也可以拓展成鼠标滑过和划出事件。</p>
+<hr>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/26/你好，hexo/" data-id="cjf8anmyq0001kgv2rdp3jbdi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/26/first/" data-id="cjf8b3fgd0000g0v2oaq3sh45" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -97,7 +125,7 @@
   
   
     <a href="/2018/03/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -120,7 +148,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
@@ -130,12 +158,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2018/03/26/你好，hexo/">你好，hexo</a>
+            <a href="/2018/03/26/first/">(no title)</a>
           </li>
         
           <li>
