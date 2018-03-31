@@ -7,12 +7,16 @@
   
   <title>Study</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Position属性2018年3月31日主要了解一下css中Postion的基本使用。首先必须要知道a它的定义和用法，position属性规定元素的定位类型，任何元素都可以定位，不过绝对或固定元素会生成一个块级框（display:block)，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。主要有以下五种:==absolute,fixed,relative,stati">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Study">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/03/31/Second/index.html">
 <meta property="og:site_name" content="Study">
+<meta property="og:description" content="Position属性2018年3月31日主要了解一下css中Postion的基本使用。首先必须要知道a它的定义和用法，position属性规定元素的定位类型，任何元素都可以定位，不过绝对或固定元素会生成一个块级框（display:block)，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。主要有以下五种:==absolute,fixed,relative,stati">
+<meta property="og:updated_time" content="2018-03-31T14:00:57.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Study">
+<meta name="twitter:description" content="Position属性2018年3月31日主要了解一下css中Postion的基本使用。首先必须要知道a它的定义和用法，position属性规定元素的定位类型，任何元素都可以定位，不过绝对或固定元素会生成一个块级框（display:block)，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。主要有以下五种:==absolute,fixed,relative,stati">
   
     <link rel="alternate" href="/atom.xml" title="Study" type="application/atom+xml">
   
@@ -59,9 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Second" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Second" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/03/31/Second/" class="article-date">
   <time datetime="2018-03-31T14:02:21.327Z" itemprop="datePublished">2018-03-31</time>
@@ -113,117 +115,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/26/first/" class="article-date">
-  <time datetime="2018-03-26T13:56:34.048Z" itemprop="datePublished">2018-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这一次介绍下鼠标点击和鼠标移出事件，实现效果弹出页面框。</p>
-<p>使用====onmousedown==,==onmouseup==,==alert==</p>
-<p>###### </p>
-<p>代码如下：</p>
-<pre><code>&lt;div id=&quot;move&quot;&gt;&lt;/div&gt;  
-&lt;script type=&quot;text/javascript&quot;&gt;  
-var m = document.getElementById(&apos;move&apos;);  
-var m = document.getElementById(&apos;move&apos;);
-//鼠标按下
-m.onmousedown = function(){//down向下
-alert(&apos;鼠标点击&apos;);
-}
-//鼠标抬起
-m.onmouseup = function(){//up向上
-alert(&apos;鼠标离开&apos;);
- }
- //尺寸
-var l = m.offsetLeft;//获取当前元素相对于父级元素x轴的偏移量
-var t = m.offsetTop;//获取当前元素相对于父级元素y轴的偏移量
-var w = m.offsetWidth;//快速获取元素的宽度
-var h = m.offsetHeight;//获取元素的高度
-</code></pre><h6 id=""><a href="#" class="headerlink" title=" "></a> </h6><hr>
-<h5 id="-1"><a href="#-1" class="headerlink" title=" "></a> </h5><p>以及css设置：</p>
-<pre><code> *{margin:0px;padding:0px;}  
-#move{
-width:300px;
-height:300px;
-background:pink;
-font-family:microsofyahei;
-position:absolute;
-top:200px;
-left:400px;}
-</code></pre><hr>
-<p>通过这个事件，可以将alert修改为其他效果，并且也可以拓展成鼠标滑过和划出事件。</p>
-<hr>
+  
+    <a href="/2018/03/26/first/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/26/first/" data-id="cjffg5pjb0002zcv2hzi2uv6d" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/26/hello-world/" class="article-date">
-  <time datetime="2018-03-26T11:47:59.581Z" itemprop="datePublished">2018-03-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/26/hello-world/" data-id="cjffg5piy0001zcv2j0mj8qmb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
